@@ -95,3 +95,9 @@ int sys_shutdown(void)
     outw(0X604, 0x2000);
     return 0;
 }
+
+int sys_reboot(void)
+{
+    outw(0X64, 0XFE00);
+    return 0;
+}

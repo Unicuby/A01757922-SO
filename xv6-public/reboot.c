@@ -6,7 +6,7 @@
 int
 main(int argc, char *argv[])
 {
-    printf(1, "Shutting Down ... \n");
-    shutdown();
+    printf(1, "Reboot in progress ... \n");
+    reboot();
     exit();
 }
