@@ -12,6 +12,13 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
-    kill(atoi(argv[i]));
+  {
+    int argument = atoi(argv[i]);
+
+    if (argument != 1)
+        kill(argument);
+    else
+        printf(1,"Cannot kill the INIT process");
+  }
   exit();
 }
